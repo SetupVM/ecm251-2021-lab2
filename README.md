@@ -2,7 +2,7 @@
 Repositório criado para a disciplina de Linguagens I.
 
 # Desenvolvedor(a):
-## Victor Ruiz Miguel de Moraes
+- Victor Ruiz Miguel de Moraes
 
 # Linguagens  e Frameworks:
 - Python
