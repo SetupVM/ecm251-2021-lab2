@@ -1,0 +1,26 @@
+1.Em qual pasta o jdk do java está instalado? (não incluir a pasta \bin
+    nesta etapa)
+
+2.E qual o caminho completo até os executáveis javac e java, que
+    foram instalados do computador?
+
+3.Como compilamos um programa por linha de comando utilizando o
+    javac?
+
+4.E como executamos este programa?
+
+5.O que são variáveis do ambiente? Para que elas servem?
+
+6. Qualquer um pode criar uma variável de ambiente?
+ 
+7.Como eu crio um variável de ambiente no Windows/Linux (escolha
+    apenas 1)?
+
+8.O que é JAVA_HOME? Por que preciso dele?
+    
+    
+    
+    
+    
+   
+    
