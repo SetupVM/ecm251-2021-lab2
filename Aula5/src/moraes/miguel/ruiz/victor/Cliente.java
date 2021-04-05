@@ -2,8 +2,12 @@ package moraes.miguel.ruiz.victor;
 
 public class Cliente {
 
-    String titular;
-    String cpf;
+    private String titular;
+    private String cpf;
+
+    public Cliente(String titular) {
+        this.titular = titular;
+    }
 
     @Override //Alt + insert
     public String toString() {

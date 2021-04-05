@@ -3,16 +3,24 @@ package moraes.miguel.ruiz.victor;
 public class Conta {
 
     //Atributos
-    Cliente cliente;
-    int numero;
-    double saldo;
+    private Cliente cliente;
+    private int numero;
+    private double saldo;
 
     //Metodos
-    void visualizarSaldo(){
 
-        System.out.println("Saldo:R$" + saldo);
+
+    public Conta(String cliente, int numero, double saldo) {
+        this.cliente = new Cliente(cliente);
+        this.numero = numero;
+        this.saldo = saldo;
     }
-    boolean sacar(double valor){
+
+    public double getSaldo(){
+        return this.saldo;
+    }
+
+    public boolean sacar(double valor){
 
         if(this.saldo >= valor) {
             this.saldo = this.saldo - valor;
@@ -20,11 +28,13 @@ public class Conta {
         }
         return false;
     }
-    void depositar(double valor){
+
+    public void depositar(double valor){
 
         this.saldo = this.saldo + valor;
     }
-    boolean transferirDinheiro(Conta destino, double valor){
+
+    public boolean transferirDinheiro(Conta destino, double valor){
 
         if(this.sacar(valor)){
             destino.depositar(valor);
