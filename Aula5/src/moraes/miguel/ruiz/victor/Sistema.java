@@ -20,8 +20,17 @@ public class Sistema {
     private void avaliarOpcao(int opcao) {
         switch (opcao){
             case 0:
-                System.out.println("Obrigado por utilizar p sistema!");
+                System.out.println("Obrigado por utilizar o sistema!");
                 this.executarSistema = false;
+                break;
+            case 1:
+                System.out.println("Saldo: R$" + this.conta.getSaldo());
+                break;
+            case 2:
+                System.out.println("Informe o valor a ser depositado:");
+                double valorParaDepositar = scanner.nextDouble();
+                this.conta.depositar(valorParaDepositar);
+                System.out.println("Operacao realizada com sucesso!");
                 break;
             default:
                 System.out.println("Opcao ainda nao implementada!");
